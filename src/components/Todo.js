@@ -11,6 +11,7 @@ function Todo(props) {
   }
 
   function closeModalHandler() {
+    props.deleteTodo(props.todo);
     setModalIsOpen(false);
   }
     
