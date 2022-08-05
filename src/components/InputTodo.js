@@ -23,6 +23,7 @@ const InputTodo = () => {
     };
 
     const addTodo = () => {
+        if(value === "") return alert("Invalid Input!");
         const newTodo = {text:value, id:new Date().getTime().toString()};
         setTodos([...todos,newTodo]);
         localStorage.setItem("localTodo", JSON.stringify([...todos, newTodo]));
