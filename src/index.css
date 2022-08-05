@@ -5,11 +5,17 @@
 body {
   font-family: sans-serif;
   margin:3rem;
-  background-color: #dfdfdf;
+  background-color: black;
 }
 
-h1, h2{
-  color: #333333;
+h1 {
+  text-align: center;
+  font-style: inherit;
+  color: rgb(247, 243, 243);
+}
+
+h2{
+  color: rgb(7, 7, 7);
 }
 
 .btn {
@@ -17,9 +23,9 @@ h1, h2{
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 4px;
-  background-color: #800040;
+  background-color: #a8105ce5;
   color: white;
-  border:1px solid #800408;
+  border:1px solid #860d11;
   margin: 0 1rem;
 }
 
@@ -38,11 +44,14 @@ h1, h2{
 }
 
 .card{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   padding: 1rem;
-  width: 20rem;
+  width: 60rem;
 }
 
 .actions {
@@ -58,8 +67,8 @@ h1, h2{
   width: 30rem;
   z-index: 10;
   position: fixed;
-  top: 20vh;
-  left: calc(50% -15rem);
+  left: calc(30%);
+  top: 40vh;
 }
 
 .backdrop{
@@ -70,6 +79,31 @@ h1, h2{
   height: 100vh;
   top: 0;
   left: 0;
+}
+
+.form-data {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 1rem;
+  width: 60rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-data {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 1rem;
+  width: 51rem;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+hr {
+  margin-bottom: 4rem;
 }
 
 
