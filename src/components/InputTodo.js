@@ -36,24 +36,25 @@ const InputTodo = () => {
 
     return(
     <>
+    <div className='form-data'>
     <form onSubmit={formSubmitHandler}>
-        <input 
+        <input className='input-data'
         type="text" 
         placeholder="Write your todo." 
         value={value} 
         onChange={inputChangeHandler} 
         />
-       
-        <button type="submit" onClick={addTodo}>
+        <button className="btn" type="submit" onClick={addTodo}>
             Add
         </button>
     </form>
+    </div>
     <div>
             You have
             {
                 !todos.length ? " no todos" : todos.length===1 ? "1 todo" : todos.length > 1 ? ` ${todos.length} todos` : null
             }
-        </div>
+    </div>
     <span>
         {todos.map(todo => <Todo key={todo.id} text={todo.text} deleteTodo={deleteTodo} todo={todo}/>)}; 
     </span>
