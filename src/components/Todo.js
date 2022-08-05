@@ -10,6 +10,10 @@ function Todo(props) {
     setModalIsOpen(true);
   }
 
+  function onCancelCloseModalHandler() {
+    setModalIsOpen(false);
+  }
+
   function closeModalHandler() {
     props.deleteTodo(props.todo);
     setModalIsOpen(false);
@@ -22,8 +26,8 @@ function Todo(props) {
       <button className='btn' onClick={deleteHandler}>Delete</button>
       </div>
       {/* {modalIsOpen ? <Modal />: null}  it is one way of doing it but the other way in the next line is way more simpler*/}
-      {modalIsOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}
-      {modalIsOpen && <Backdrop onClick={closeModalHandler}/>}
+      {modalIsOpen && <Modal onCancel={onCancelCloseModalHandler} onConfirm={closeModalHandler}/>}
+      {modalIsOpen && <Backdrop onClick={onCancelCloseModalHandler}/>}
       </div>
     );
 }
