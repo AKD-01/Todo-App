@@ -50,10 +50,10 @@ const InputTodo = () => {
         </button>
     </form>
     </div>
-    <div>
+    <div className='info'>
             You have
             {
-                !todos.length ? " no todos" : todos.length===1 ? "1 todo" : todos.length > 1 ? ` ${todos.length} todos` : null
+                !todos.length ? " no todos." : todos.length===1 ? " 1 todo." : todos.length > 1 ? ` ${todos.length} todos.` : null
             }
     </div>
     <span>
