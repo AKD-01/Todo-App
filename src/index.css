@@ -105,5 +105,53 @@ h2{
 hr {
   margin-bottom: 4rem;
 }
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background-color: #e982b5;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 1rem;
+  width: 20rem;
+  color:black;
+  font-size: large;
+  font-style: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    margin: auto;
+    background-color: rgba(15, 13, 13, 0.993);
+  }
+  hr {
+    margin-bottom: 2rem;
+  }
+  .card{
+    width: 22rem;
+  }
+  .modal {
+    border-radius: 2px;
+    width: 20rem;
+    left: calc(8%);
+    top: 40vh;
+  }
+  .form-data {
+    border-radius: 2px;
+    width: 22rem;
+    margin-bottom: 1rem;
+  }
+  .input-data {
+    border-radius: 2px;
+    width: 13rem;
+  }
+  .info {
+    background-color: #eb9dc4;
+    border-radius: 2px;
+    width: 16rem;
+  }  
+}
 
 
